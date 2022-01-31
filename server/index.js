@@ -8,7 +8,7 @@ const applyImagesMiddlwares = require('./imageMiddlewares');
 // console.log(require('crypto').randomBytes(64).toString('hex'));
 
 const server = express();
-const { SERVER_PORT, DB_URL, DB_LOCAL_URL } = process.env;
+const { SERVER_PORT, DB_URL } = process.env;
 
 applyMiddlewares(server);
 routes(server);
